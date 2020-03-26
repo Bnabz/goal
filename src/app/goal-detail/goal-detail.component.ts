@@ -11,9 +11,11 @@ export class GoalDetailComponent implements OnInit {
   @Input() goal: Goal;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  goalComplete(complete:boolean){
-    this.isComplete.emit(complete);
-  }
+
+    goalDelete(complete:boolean){
+       console.log("why")
+      this.isComplete.emit(complete);
+    }
 
   constructor() { }
 
