@@ -13,7 +13,7 @@ export class GoalDetailComponent implements OnInit {
 
 
     goalDelete(complete:boolean){
-       console.log("why")
+
       this.isComplete.emit(complete);
     }
 
